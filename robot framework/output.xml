@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170519 16:16:04.945" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\robot framework\alertScript.robot" id="s1" name="alertScript">
+<test id="s1-t1" name="Check Alert Exit OK">
+<kw name="Open browser to RD forgot password">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+<arg>browser=${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170519 16:16:05.055" level="INFO">Opening browser 'gc' to base url 'https://epit.rd.go.th/EFILING/RegController'</msg>
+<status status="PASS" endtime="20170519 16:16:10.849" starttime="20170519 16:16:05.055"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:16:10.850" starttime="20170519 16:16:05.055"></status>
+</kw>
+<kw name="Click forgot password">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>name=link_RegType1</arg>
+</arguments>
+<msg timestamp="20170519 16:16:10.852" level="INFO">Clicking link 'name=link_RegType1'.</msg>
+<status status="PASS" endtime="20170519 16:16:12.506" starttime="20170519 16:16:10.851"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:16:12.506" starttime="20170519 16:16:10.851"></status>
+</kw>
+<kw name="Click Exit">
+<kw name="Click Image" library="Selenium2Library">
+<doc>Clicks an image found by `locator`.</doc>
+<arguments>
+<arg>//*[@id="bExit"]</arg>
+</arguments>
+<msg timestamp="20170519 16:16:12.507" level="INFO">Clicking image '//*[@id="bExit"]'.</msg>
+<status status="PASS" endtime="20170519 16:16:12.593" starttime="20170519 16:16:12.507"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:16:12.593" starttime="20170519 16:16:12.506"></status>
+</kw>
+<kw name="Click OK">
+<kw name="Confirm Action" library="Selenium2Library">
+<doc>Dismisses currently shown confirmation dialog and returns it's message.</doc>
+<status status="PASS" endtime="20170519 16:16:12.608" starttime="20170519 16:16:12.595"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:16:12.608" starttime="20170519 16:16:12.595"></status>
+</kw>
+<kw name="Back to first page">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://epit.rd.go.th/publish/index.php</arg>
+</arguments>
+<msg timestamp="20170519 16:16:13.709" level="INFO">Current location is 'http://epit.rd.go.th/publish/index.php'.</msg>
+<status status="PASS" endtime="20170519 16:16:13.709" starttime="20170519 16:16:12.609"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:16:13.709" starttime="20170519 16:16:12.609"></status>
+</kw>
+<tags>
+<tag>nowtest</tag>
+</tags>
+<status status="PASS" endtime="20170519 16:16:13.709" critical="yes" starttime="20170519 16:16:05.055"></status>
+</test>
+<status status="PASS" endtime="20170519 16:16:13.712" starttime="20170519 16:16:04.945"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">nowtest</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="alertScript" pass="1">alertScript</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
